@@ -1,0 +1,200 @@
+# creating the screen
+ScreenManager:
+   LoginWindow:
+   CreateWindow:
+   DashboardWindow:
+   TrainingWindow:
+   AccidentWindow:
+   SafetyWindow:
+   ActivityWindow:
+
+
+<LoginWindow>:
+   name: "login"
+   MD3Card:
+      padding: 4
+      orientation: "vertical"
+
+      MDLabel:
+         text:"WELCOME"
+         font_style: "Button"
+         font_size: 45
+         halign: "center"
+         size_hint_y: None
+         height: self.texture_size[1]
+      MDTextField:
+         id: "email"
+         hint_text: 'Email'
+         icon_left: "email"
+         size_hint_x: None
+         font_size: 18
+         anchor_x: "center"
+         anchore_y:"center"
+         width:200
+
+      MDTextField:
+         id: password
+         halign: "center"
+         hint_text: "password"
+         icon_left: "eye-off"
+         size_hint_x: None
+         width: 200
+         font_size: 18
+
+
+      MDRoundFlatButton:
+         halign: "center"
+         text: "Create Account"
+         font_size: 12
+         on_press:
+
+      MDRoundFlatButton:
+         text: "Log In"
+         halign: "center"
+         font_size: 12
+         on_press:
+
+
+
+
+
+<CreateWindow>:
+   name: "create"
+   BoxLayout:
+      orintation: "vertical"
+      MDTextField:
+         id: account
+         halign: "center"
+         hint_text: "account"
+         icon_left: "account"
+         size_hint_x: None
+         width: 200
+         font_size: 18
+      MDTextField:
+         id: Name
+         halign: "center"
+         hint_text: "Name"
+         icon_left: "Name"
+         size_hint_x: None
+         width: 200
+         font_size: 18
+      MDTextField:
+         id: email
+         halign: "center"
+         hint_text: "Email"
+         icon_left: "mail"
+         size_hint_x: None
+         width: 200
+         font_size: 18
+      MDTextField:
+         id: phone
+         halign: "center"
+         hint_text: "Phone"
+         icon_left: "Tel"
+         size_hint_x: None
+         width: 200
+         font_size: 18
+      MDTextField:
+         id: password
+         hint_text: "password"
+         icon_left: "eye-off"
+         size_hint_x: None
+         width: 200
+         font_size: 18
+      MDTextField:
+         id: confirmPassword
+         hint_text: "Confirm Password"
+         icon_left: "eye-off"
+         size_hint_x: None
+         width: 200
+         font_size: 18
+      MDRoundFlatButton:
+         text: "Create Account"
+         halign: "center"
+         font_size: 12
+         on_press:
+      MDRoundFlatButton:
+         text: "Login"
+         halign: "center"
+         font_size: 12
+         on_press:
+
+
+
+<DashboardWindow>:
+   BoxLayout:
+      orientation: "vertical"
+      MDRectangleFlatIconButton:
+         icon: "android"
+         id: "activities"
+         text: "Activities"
+         theme_text_color: "Custom"
+         text_color: "white"
+         line_color: "red"
+         theme_icon_color: "Custom"
+         icon_color: "orange"
+
+      MDRectangleFlatIconButton:
+         icon: "android"
+         id: "risk"
+         text: "Risk Report"
+         theme_text_color: "Custom"
+         text_color: "white"
+         line_color: "red"
+         theme_icon_color: "Custom"
+         icon_color: "orange"
+      MDRectangleFlatIconButton:
+         icon: "android"
+         id: "accident"
+         text: "Accident"
+         theme_text_color: "Custom"
+         text_color: "white"
+         line_color: "red"
+         theme_icon_color: "Custom"
+         icon_color: "orange"
+
+      MDRectangleFlatIconButton:
+         icon: "android"
+         id: "safety"
+         text: "Safety awereness"
+         theme_text_color: "Custom"
+         text_color: "white"
+         line_color: "red"
+         theme_icon_color: "Custom"
+         icon_color: "orange"
+
+      MDRectangleFlatIconButton:
+         icon: "android"
+         id: "training"
+         text: "Training Application"
+         theme_text_color: "Custom"
+         text_color: "white"
+         line_color: "red"
+         theme_icon_color: "Custom"
+         icon_color: "orange"
+
+      MDTextButton:
+         text: "Back"
+         custom_color: "white"
+         on_press:
+
+
+
+<TrainingWindow>:
+
+
+
+
+<AccidentWindow>:
+
+
+
+
+<SafetyWindow>:
+
+
+
+
+<ActivityWindow>:
+
+
